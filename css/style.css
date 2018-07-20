@@ -1,0 +1,260 @@
+/* body staaf*/
+body,h1 {font-family: "Raleway", sans-serif;
+text-align: center;}
+body, html {height: 100%}
+.bgimg {
+    background-image: url("https://images.unsplash.com/photo-1492979423821-7193e8938424?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=97c06eee2b18a94eb017b25a65ee42e1&auto=format&fit=crop&w=747&q=80"
+    );
+    min-height: 100%;
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+body {
+    font-family: "Lato", sans-serif;
+    transition: background-color .5s;
+}
+
+/* truc de navbar*/
+.sidenav {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color:	teal;
+    overflow-x: hidden;
+    transition: 0.5s;
+    padding-top: 60px;
+}
+
+.sidenav a {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 25px;
+    color: white;
+    display: block;
+    transition: 0.3s;
+}
+
+.sidenav a:hover {
+    color:gray;
+}
+
+.sidenav .closebtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px;
+}
+
+#main {
+    transition: margin-left .5s;
+    padding: 16px;
+}
+
+@media screen and (max-height: 450px) {
+  .sidenav {padding-top: 15px;}
+  .sidenav a {font-size: 18px;}
+}
+#menu{position: fixed;
+top: 0;}
+/*text*/
+#text{color: white;
+font-family:  "ink free";
+font-size:60% ;
+text-align: center;}
+
+#para{ background-image: url("https://enbref.tn/wp-content/uploads/2016/07/La-Crique-Robinson-%C3%A0-Korbous-768x432-1.jpg");
+    min-height: 100%;
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;}
+    #mot{ font-size: 40px;
+    color: white;
+font-family:"latino", sans-serif;
+text-align: center;}
+/*Collage image*/
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: Arial;
+}
+
+.header {
+    text-align: center;
+    padding: 32px;
+}
+
+.row {
+    display: -ms-flexbox; /* IE10 */
+    display: flex;
+    -ms-flex-wrap: wrap; /* IE10 */
+    flex-wrap: wrap;
+    padding: 0 4px;
+}
+
+/* Create four equal columns that sits next to each other */
+.column {
+    -ms-flex: 25%; /* IE10 */
+    flex: 25%;
+    max-width: 25%;
+    padding: 0 4px;
+}
+
+.column img {
+    margin-top: 8px;
+    vertical-align: middle;
+}
+
+/* Responsive layout - makes a two column-layout instead of four columns */
+@media screen and (max-width: 800px) {
+    .column {
+        -ms-flex: 50%;
+        flex: 50%;
+        max-width: 50%;
+    }
+}
+
+/* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+    .column {
+        -ms-flex: 100%;
+        flex: 100%;
+        max-width: 100%;
+    }
+}
+/*image block*/
+* {box-sizing: border-box;}
+
+
+.image-box {
+    height: 200px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    margin-bottom: 20px;
+}
+.container {
+  position: relative;
+  width: 150%;
+  max-width: 300px;
+}
+
+.image {
+  display: block;
+  width: 115%;
+height: auto;
+margin-left:-9px;}
+
+.overlay {
+  position: absolute; 
+  bottom: 0; 
+  left: 0;
+  right: 0;
+  background: rgb(0, 0, 0);
+  background: rgba(0, 0, 0, 0.5); /* Black see-through */
+  color: #f1f1f1; 
+  transition: .5s ease;
+  opacity:0;
+  color: white;
+  font-size: 20px;
+  padding: 20px;
+  text-align: center;
+}
+
+.container:hover .overlay {
+  opacity: 1;
+}
+
+/*social media icons*/
+#social {
+  margin: 20px 10px;
+  text-align: center;
+}
+
+.smGlobalBtn { /* global button class */
+    display: inline-block;
+    position: relative;
+    cursor: pointer;
+    width: 50px;
+    height: 50px;
+    border:2px solid #ddd; /* add border to the buttons */
+    box-shadow: 0 3px 3px #999;
+    padding: 0px;
+    text-decoration: none;
+    text-align: center;
+    color: #fff;
+    font-size: 25px;
+    font-weight: normal;
+    line-height: 2em;
+    border-radius: 27px;
+    -moz-border-radius:27px;
+    -webkit-border-radius:27px;
+}
+
+/* facebook button class*/
+.facebookBtn{
+    background: #4060A5;
+    border-color: transparent;
+}
+
+.facebookBtn:before{ /* use :before to add the relevant icons */
+    font-family: "FontAwesome";
+    content: "\f09a"; /* add facebook icon */
+}
+
+.facebookBtn:hover{
+    color:  #4060A5;
+    background: #fff;}
+
+
+/* twitter button class*/
+.twitterBtn{
+    background: #00ABE3;
+    border-color: transparent;
+}
+
+.twitterBtn:before{
+      font-family: "FontAwesome";
+      content: "\f099"; /* add twitter icon */
+      
+}
+
+.twitterBtn:hover{
+      color: #00ABE3;
+      background: #fff;
+}
+/* google plus button class*/
+.googleplusBtn{
+    background: #e64522;
+    border-color: transparent;
+}
+
+.googleplusBtn:before{
+      font-family: "FontAwesome";
+      content: "\f0d5"; /* add googleplus icon */
+}
+.googleplusBtn:hover{
+    color:  #e64522;
+    background: #fff;}
+
+/* pinterest button class*/
+.pinterestBtn{
+    background: #cb2027;
+    border-color: transparent;
+}
+
+.pinterestBtn:before{
+      font-family: "FontAwesome";
+      content: "\f0d2"; /* add pinterest icon */
+}
+.pinterestBtn:hover{
+    color: #cb2027;
+    background: #fff;}
+    

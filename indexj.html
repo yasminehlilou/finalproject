@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>Pour Réservation</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="icon" type="image/jpg" href="res/bb.jfif">
+  <link rel="stylesheet" type="text/css" media="screen" href="css/main.css" />
+   <link rel="icon" type="image:jpg" href="https://www140.lunapic.com/do-not-link-here-use-hosting-instead/153208860710246658?8005411527">
+   <script src="https://www.gstatic.com/firebasejs/5.3.0/firebase.js"></script>
+   
+</head>
+<body>
+  <center>
+  <div class="row" >
+    <div class="col-lg-10 col-md-9">
+<!--                        <div class="col-lg-1"><img src="img/ajout_contact.png" alt=""></div>-->
+        <h1 class="titre-contact" id="ji">Réserver votre place</h1>
+    </div>
+    <div class="col-lg-2">
+        <form>
+            <input id="impression" name="impression" type="button" onclick="imprimer_page()" value="Imprimer" class="pull-right"  />
+        </form>
+    </div>
+</div>
+</div>
+
+
+<div class="container">
+<div class="row">
+    <div class="col-lg-12">     
+        <div class="tableaudebord">
+            <div class="contact_container">
+                <div class="row">
+                    <div class="col-lg-12 col-md-12">
+                        
+                        <p id="mi">Choisissez votre destination de rêve </p>
+                        <div class="nb_com" style="display:none">9</div>
+                    </div>
+                </div> 
+            </div>
+
+            <div class='container'>
+                <div class='row'>
+                    
+                        <form id="contactForm" >
+                            <div class='row'>
+                            </div>
+                            <div class='row'>
+                                
+                                    <div class="col-lg-6">
+                                        <!--<form class="form-horizontal" role="form">-->
+                                    
+                                        <div class="form-group"class="btn">
+                                            <label for="nom" class="col-sm-2 control-label"><p>Nom :</p></label>
+                                            <div class="col-sm-8">
+                                                <input type="text" class="form-control"  id="nom">
+                                            </div>
+                                        </div>
+                                        <div class="form-group" >
+                                            <label for="prenom" class="col-sm-2 control-label"><p>Prénom :</p></label>
+                                            <div class="col-sm-8">
+                                                <input type="text" class="form-control"  id="prenom">
+                                            </div>
+                                        </div>
+                                        <div class="form-group">
+                                            <label for="mail" class="col-sm-2 control-label"><p>Email :</p></label>
+                                            <div class="col-sm-8">
+                                                <input type="email" class="form-control" name="email" id="email">
+                                            </div>
+                                        </div>
+                                        <div class="form-group">
+                                            <label for="tel" class="col-sm-2 control-label"><p>Numéro de telephone:</p></label>
+                                            <div class="col-sm-8">
+                                                <input type="text" class="form-control" name="tel" id="tel">
+                                            </div>
+                                        </div>
+                                        <div class="form-group">
+                                          <label for="tel" class="col-sm-2 control-label"><p>Plage choisie:</p></label>
+                                      
+                                              
+       <br>                                                                          
+    <select id="choix" name="choix">
+      <option value="australia">Coucou Beach</option>
+      <option value="canada">Cap Angela</option>
+      <option value="usa">Ain Mestir</option>
+      <option value="usa">Kantaoui</option>
+      <option value="usa">Cap zebib</option>
+      <option value="usa">Galite</option>
+      <option value="usa">Aghir</option>
+      <option value="usa">Mansoura kelibia</option>
+      <option value="usa">Grottes</option>
+      <option value="usa">Fatha</option>
+      <option value="usa">haouaria</option>
+      <option value="usa">Midoun</option>
+      <option value="usa">Crique de robinson</option>
+      <option value="usa">Budha Beach hammamet</option>
+      <option value="usa">kef abed</option>
+      <option value="usa">Kuriat</option>
+
+     
+      
+
+    </select>
+                                          </div>
+                                      </div>
+                                      <div class="form-group">
+                                        <label for="tel" class="col-sm-2 control-label"><p>Date Choisie</p></label>
+                                        <div class="col-sm-8">
+                                            <input type="date" class="form-control" name="tel" id="choix">
+                                        </div>
+  
+                                    </div>
+                          
+                                        <!--                                    </form>-->
+              
+                            <div class="row">
+                              <br><br>
+                              
+                                        <div class="col-lg-3 col-lg-offset-1 col-md-3 col-md-offset-1 col-xs-12">
+                                            <button name="submit" id="submit" type="submit" value="submit" class="btn btn-default">Réserver</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+             </div>
+              </div>
+               </div>
+               </center>
+</body>
+<script src="js/main.js"></script>
+</html>

@@ -1,0 +1,30 @@
+body{background-image: url("https://s-i.huffpost.com/gen/4511364/thumbs/o-CAP-ANGELA-570.jpg?5");
+    background-size: cover;
+    background-position:center;
+    background-attachment: fixed;}
+    #bl{ background-color: #d3d3d3;
+        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    width: 700px;
+    text-align: center;
+    height: 500px;
+    margin: auto;
+    margin-top: 100px;
+    opacity: 0.8;
+    border-radius: 25px;}
+
+#mot{color: black;
+opacity:1 !important;
+border: #d3d3d3;
+border-style: solid;
+border-block-start-width: 50px
+}
+#lista{
+    list-style-type: none;
+    position: absolute;
+    right: 0px;
+}
+#droit{
+    
+        position: relative;
+    
+}
